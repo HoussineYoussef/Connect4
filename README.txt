@@ -1,0 +1,1 @@
+Il faut changer l'extension du fichier connect4.txt en .js

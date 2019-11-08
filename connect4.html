@@ -1,0 +1,40 @@
+<html>
+<head>
+  <title>Corrig&eacute; TP 5</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <link rel="stylesheet" href=" connect4.css">
+  <script src="connect4.js"></script>
+</head>
+<body>
+  <h1>PUISSANCE 4</h1>
+  <table summary="Grille de jeu" id="grille" border="1">
+  </table>
+
+  <div>
+    <p id= "whoPlay" >AU TOUR DU JOUEUR 1</p>
+  </div>
+
+  <div id = "button">
+    <button id="restart" onclick="grille.recommencer()">New Game</button>
+    <button id="save" onclick="grille.sauvegarder()">Save Game</button>
+  </div>
+
+  <div id = "joueurs">
+    <p id="player1"> Joueur 1 = Rouge</p>
+    <p id="player2"> Joueur 2 = Jaune </p>
+  </div>
+
+  <p id="warning"> Attention, vous ne pouvez pas sauvegarder une partie lorsque celle-ci est terminée <br /> par une victoire !</p>
+
+  <script>
+    if (localStorage.getItem("Grille") != null){
+        var grille = JSON.parse(localStorage.getItem("Grille"));
+        grille.__proto__ = Grille.prototype;
+    }
+    else{
+      var grille = new Grille(6,7);
+    }
+    grille.afficher();
+  </script>
+</body>
+</html>

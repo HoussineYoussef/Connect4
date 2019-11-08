@@ -1,0 +1,63 @@
+body{
+  background-color:#828282;
+}
+
+#restart{
+  background-color: black;
+  color : white;
+  padding : 2em;
+  border-radius: 2em;
+}
+
+#restart:hover{
+  background-color: red;
+}
+
+#save{
+  background-color: black;
+  color : white;
+  padding : 2em;
+  border-radius: 2em;
+}
+
+#save:hover{
+  background-color: red;
+}
+
+*{
+  text-align: center;
+}
+
+#button{
+  padding: 4px;
+  text-align: center;
+}
+
+#warning{
+  background-color: orange;
+  font-weight : bold;
+  font-style: italic;
+  font-family: sans-serif;
+}
+
+#player1{
+  color:red;
+}
+
+#player2{
+  color:yellow;
+}
+
+#joueurs{
+  padding:2px;
+  text-align: center;
+  background-color:black;
+  font-size: 16px;
+}
+
+#whoPlay{
+  background-color: black;
+  color: red;
+  font-weight: bold;
+  font-style: italic;
+}
